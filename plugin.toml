@@ -1,0 +1,9 @@
+[plugin]
+name = "welcome"
+main = "welcome.py"
+enabled = true
+
+[about]
+description = "A plugin that sends a welcome message to new users."
+version = "1.0.0"
+author = "elordenador"

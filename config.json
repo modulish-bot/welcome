@@ -1,0 +1,22 @@
+{
+    "welcome_embed": {
+        "title": "Welcome to the server, {user}!",
+        "description": "We're glad to have you here. Please read the rules and enjoy your stay!",
+        "color": 3447003,
+        "footer": {
+            "text": "Server Bot"
+        },
+        "fields": [
+            {
+                "name": "Rules",
+                "value": "1. Be respectful\n2. No spamming\n3. Follow Discord's TOS",
+                "inline": false
+            },
+            {
+                "name": "Get Started",
+                "value": "Introduce yourself in #introductions and check out #announcements for updates."
+            }
+        ]
+    },
+    "destination_channel_id": 0
+}
