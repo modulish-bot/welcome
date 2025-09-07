@@ -6,7 +6,7 @@ class Welcome(commands.Cog):
     def __init__(self, bot: discord.Bot, config_dir: str):
         self.bot = bot
         self.config_dir = config_dir
-        self.config = json.loads(open(config_dir + "/config.json", "r"))
+        self.config = json.load(open(config_dir + "/config.json", "r"))
         if self.config["destination_channel_id"] == 0:
             print("[ERROR] Channel ID not set, disabling...")
             self.bot.remove_cog("Welcome")
