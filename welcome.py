@@ -17,8 +17,11 @@ def setup(bot: discord.Bot, config_dir: str = None):
     if config_dir is None:
         config_dir = globals().get('PLUGIN_CONFIG_DIR', '<unknown>')
 
+
+    _, plugin_name = config_dir.split("/")
+
     if not os.path.exists(config_dir + "/config.json"):
-        shutil.copy2("config.json", config_dir + "/config.json")
+        shutil.copy2(f"plugins/{plugin_name}/config.json", config_dir + "/config.json")
 
     
     bot.add_cog(Welcome(bot,config_dir))
