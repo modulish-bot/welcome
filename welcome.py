@@ -40,6 +40,8 @@ class Welcome(commands.Cog):
         if "fields" in embed_data:
             for field in embed_data["fields"]:
                 embed.add_field(name=field["name"], value=field["value"], inline=field["inline"])
+
+        await channel.send(embed_data["outside"], embed=embed)
         
 
 
