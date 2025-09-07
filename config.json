@@ -1,10 +1,16 @@
 {
     "welcome_embed": {
-        "title": "Welcome to the server, {user}!",
+        "outside": "{user.mention}, welcome to the server!",
+        "title": "Welcome to the server, {user.name}!",
         "description": "We're glad to have you here. Please read the rules and enjoy your stay!",
-        "color": 3447003,
+        "color": {
+            "r": 0,
+            "g": 255,
+            "b": 0
+        },
         "footer": {
-            "text": "Server Bot"
+            "text": "Server Bot",
+            "icon_url": null
         },
         "fields": [
             {
