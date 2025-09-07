@@ -19,13 +19,13 @@ class Welcome(commands.Cog):
 
         # Reemplazo de datos
         embed_data["title"] = embed_data["title"].replace("{user.name}", member.name)
-        embed_data["title"] = embed_data["title"].replace("{user.id}", member.id)
+        embed_data["title"] = embed_data["title"].replace("{user.id}", str(member.id))
         embed_data["title"] = embed_data["title"].replace("{user.mention}", f"<@{member.id}>")
         embed_data["description"] = embed_data["description"].replace("{user.name}", member.name)
-        embed_data["description"] = embed_data["description"].replace("{user.id}", member.id)
+        embed_data["description"] = embed_data["description"].replace("{user.id}", str(member.id))
         embed_data["description"] = embed_data["description"].replace("{user.mention}", f"<@{member.id}>")
         embed_data["outside"] = embed_data["outside"].replace("{user.name}", member.name)
-        embed_data["outside"] = embed_data["outside"].replace("{user.id}", member.id)
+        embed_data["outside"] = embed_data["outside"].replace("{user.id}", str(member.id))
         embed_data["outside"] = embed_data["outside"].replace("{user.mention}", f"<@{member.id}>")
         
 
